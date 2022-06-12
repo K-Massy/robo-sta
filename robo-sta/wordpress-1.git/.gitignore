@@ -1,0 +1,9 @@
+config.codekit
+.codekit-cache
+node_modules/
+.sass-cache
+.gulp
+Thumbs.db
+*.BAK
+*.LCK
+*.DS_Store

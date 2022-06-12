@@ -1,0 +1,5 @@
+AuthType Basic
+AuthUserFile /home/dev-robo-sta/www/.htpasswd
+AuthName “ID・パスワード入力”
+AuthType Basic
+require valid-user

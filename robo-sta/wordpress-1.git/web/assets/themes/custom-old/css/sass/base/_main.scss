@@ -1,0 +1,151 @@
+/* The global structure of an HTML document
+-------------------------------------------------- */
+
+html{
+    line-height: 1;
+}
+body{
+    min-width: $body-width;
+    font-family: $font-family;
+    color: $color;
+    line-height: $line-height;
+    font-size: 0.813em; // 13px
+    @include media(ipad) {
+        min-width: 320px;
+        max-width: 100%;
+    }
+}
+
+/* address */
+address{
+    font-style: normal;
+}
+
+
+/* Links
+-------------------------------------------------- */
+
+/* anchor */
+a{
+    color: $link-color;
+    text-decoration: underline;
+    &:link{
+        color: $link-color;
+        text-decoration: underline;
+    }
+    &:visited{
+        color: $link-color-visited;
+    }
+    &:hover{
+        color: $link-color-hover;
+        text-decoration:none;
+    }
+    &:active{
+        color: $link-color-active;
+        text-decoration: underline;
+    }
+}
+
+
+/* Text
+-------------------------------------------------- */
+
+/* emphasis */
+strong{
+    // font-weight: bold;
+}
+em{
+    // color: #FF3300;
+    // font-style: normal;
+}
+
+/* quotations */
+blockquote{
+}
+q{
+}
+
+/* superscript, subscript */
+// sup{
+//     font-size: 80%;
+//     line-height: 1.1;
+//     vertical-align: 3px;
+// }
+// sub{
+//     font-size: 80%;
+//     line-height: 1.1;
+//     vertical-align: bottom;
+// }
+
+
+/* Objects, Images, and Applets
+-------------------------------------------------- */
+
+/* img */
+img{
+    vertical-align: bottom;
+    @include media(ipad) {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* map */
+map{}
+area{}
+
+
+/* Alignment, font styles, and horizontal rules
+-------------------------------------------------- */
+
+/* horizon */
+hr{
+    // display: none;
+}
+hr.border{
+    // display: block;
+    // color: #ccc;
+    // border: 1px solid #ccc;
+}
+
+
+/* Frames
+-------------------------------------------------- */
+
+/* inline frame */
+iframe{
+}
+
+/* Forms
+-------------------------------------------------- */
+button,
+input,
+select,
+textarea {
+    // margin: 0;
+    // font-size: 100%;
+    // vertical-align: middle;
+}
+button,
+input {
+    // *overflow: visible; // Inner spacing ie IE6/7
+}
+input[type="text"],
+input[type="password"],
+textarea{
+    max-width: 100% !important;
+    // border: 1px solid #ccc;
+    // &:hover{
+    //     border: 1px solid #f90;
+    // }
+    // &:focus{
+    //     border: 1px solid #f90;
+    // }
+    @include media(ipad) {
+        font-size: 16px; // avoid zoom
+    }
+}
+textarea{
+    overflow: auto;
+    font-family: $font-family;
+}

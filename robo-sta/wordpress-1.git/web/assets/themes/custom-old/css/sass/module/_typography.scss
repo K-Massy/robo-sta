@@ -1,0 +1,74 @@
+/* typography
+-------------------------------------------------- */
+
+/* headings */
+.h1{
+    margin: 1.5em 0 0.5em;
+    padding: 0;
+    color: $color;
+    font-weight: bold;
+    @include font-size(32, $font-size);
+}
+.h2{
+    margin: 1.5em 0 0.5em;
+    padding: 0;
+    color: $color;
+    font-weight: bold;
+    @include font-size(24, $font-size);
+}
+.h3{
+    margin: 1.5em 0 0.5em;
+    padding: 0;
+    color: $color;
+    font-weight: bold;
+    @include font-size(20, $font-size);
+}
+.h4{
+    margin: 1.5em 0 0.5em;
+    padding: 0;
+    color: $color;
+    font-weight: bold;
+    @include font-size(18, $font-size);
+}
+.h5{
+    margin: 1.5em 0 0.5em;
+    padding: 0;
+    color: $color;
+    font-weight: bold;
+    @include font-size(16, $font-size);
+}
+.h6{
+    margin: 1.5em 0 0.5em;
+    padding: 0;
+    color: $color;
+    font-weight: bold;
+    @include font-size(14, $font-size);
+}  
+
+
+/* section text margin style */
+p,
+blockquote,
+table,
+dl,
+ul,
+ol,
+pre{
+    margin: 0 0 1em;
+}
+
+/* text-align */
+.alignleft  { text-align: left; }
+.aligncenter{ text-align: center; }
+.alignright { text-align: right; }
+
+/* font style */
+span.important{
+    color: #ff0000;
+}
+span.large{
+    font-size: 120%;
+}
+span.small{
+    font-size: 84%;
+}

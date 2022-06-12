@@ -1,0 +1,147 @@
+/* tables
+-------------------------------------------------- */
+
+/* table */
+$table-border-color : #CCCCCC;
+
+table{
+	// width: 100%;
+	border: 1px solid $table-border-color;
+	border-collapse: collapse;
+	border-spacing: 1;
+	caption{
+		text-align: center;
+		margin: 0;
+		&.left{ text-align: left; }
+		&.right{ text-align: right; }
+	}
+	tr{
+		th,
+		td{
+			padding:0.5em 10px;
+			border: 1px solid $table-border-color;
+			text-align: left;
+		}
+		th{
+			font-weight: normal;
+			background: #EFEFEF;
+		}
+	}
+	thead tr th,
+	tr.col th{
+		border: 1px solid $table-border-color;
+		color: $color;
+		font-weight: bold;
+	}
+}
+
+/* vertical align */
+table{
+	.top{
+		th,
+		td{
+			vertical-align: top;
+		}
+	}
+	.middle{
+		th,
+		td{
+			vertical-align: middle;
+		}
+	}
+	.bottom{
+		th,
+		td{
+			vertical-align: bottom;
+		}
+	}
+}
+
+/* full */
+table.is_full{
+	width: 100%;
+}
+
+/* without border */
+table.noborder,
+table[border="0"]{
+	border: none;
+	tr{
+		th,td{
+			border: none;
+			background: none;
+		}
+	}
+}
+
+/* calendar */
+table{
+	caption{
+		span.thismonth{
+			font-size: 200%;
+			font-weight: bold;
+			padding: 0 20px;
+		}
+	}
+	.holiday,
+	.sunday{
+		background: #FFF0EC;
+	}
+	.saturday{
+		background: #E3F3F8;
+	}
+}
+
+table.calendar{
+	width: 100%;
+	td{
+		width:(100%/7);
+		padding: 0;
+	}
+	.sat{
+		color: #007dd8;
+	}
+	.sun{
+		color: #dd1d00;
+	}
+	.calendar_content p{
+		margin: 0;
+	}
+}
+
+/* responsive calendar */
+table.calendar_responsive{
+	@include media(ipad) {
+		thead{
+			display: none;
+		}
+		tr,th,td{
+			display: block;
+			width: auto;
+			@include box-sizing();
+		}
+		.calendar_date,
+		.calendar_content{
+			display: table-cell;
+		}
+
+		// day
+		$days   : sun,mon,tue,wed,thu,fri,sat;
+		$daysJa : 日,月,火,水,木,金,土;
+		@each $val in $days{
+			$index_key: index($days, $val);
+			td{
+				&.#{$val} .calendar_date:after{
+					content: '#{nth($daysJa, $index_key)}';
+				}
+			}
+		}
+	}
+}
+
+
+.is_calendar_empty{
+	@include media(ipad) {
+		display: none;
+	}
+}

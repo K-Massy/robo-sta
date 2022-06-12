@@ -1,0 +1,117 @@
+/* forms
+-------------------------------------------------- */
+
+/* text, textarea */
+// input.text,
+input[type="text"],
+input[type="password"],
+textarea{
+	-webkit-appearance: none;
+	appearance: none;
+	@include box-sizing(border-box);
+	padding: 5px;
+	border: 1px solid #CCCCCC;
+	&:hover{
+		// border-color: 
+	}
+	&:focus{
+		// border-color:
+		// background-color:
+	}
+}
+
+/* btn */
+input[type="submit"]{
+	@extend .btn;
+}
+
+/* block */
+input,
+select,
+textarea{
+	&.block,
+	&.is_block{
+		display: block;
+		width: 100%;
+	}
+	&.is_error{
+		border-color: #EFB9C3;
+		background-color: #FFC6CA;
+		&:focus{
+			background-color: #FFFFFF;
+		}
+	}
+}
+
+/* inline form */
+form{
+	.inline_form{
+		width: 100%;
+		display: table;
+	}
+	.inline_form_text,
+	.inline_form_btn{
+		display: table-cell;
+		vertical-align: middle;
+	}
+	.inline_form_text{
+		width: 100%;
+		padding-right: 5px;
+		& > input[type="text"]{
+			width: 100%;
+			height: 44px;
+		}
+	}
+	.inline_form_btn{
+		white-space: nowrap;
+		& > input[type="submit"]{
+			height: 44px;
+		}
+	}
+}
+
+/* required */
+form{
+	.required,
+	.label_required,
+	.optional,
+	.label_optional{
+		@include font-size (11, $font-size);
+		margin: 0 5px;
+	}
+	.required,
+	.label_required{
+		border-color: #FF3300;
+		background-color: #FF3300;
+		color: #FFFFFF;
+	}
+	.optional,
+	.label_optional{
+		border-color: #65abd0;
+		background-color: #65abd0;
+		color: #FFFFFF;
+	}
+}
+
+/* agreement */
+form .agreement{
+	margin: 0 0 1em;
+	padding: 10px;
+	background-color: #EFEFEF;
+	& > .article{
+		overflow-y: scroll;
+		background-color: #FFFFFF;
+		height: 10em;
+		padding: 10px;
+	}
+}
+
+/* table */
+form{
+	table{
+		tr{
+			th,td{
+			}
+		}
+	}
+}

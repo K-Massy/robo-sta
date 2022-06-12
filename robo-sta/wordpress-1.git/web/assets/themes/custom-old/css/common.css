@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+/*
+* 1.generic
+* 2.list
+* 3.image
+* 4.form
+* 5.table
+* 6.pager
+* 7.tab
+*/
+
+
+/* generic
+-------------------------------------------------- */
+
+/* section text margin style */
+div.section p,
+div.section blockquote,
+div.section table,
+div.section dl,
+div.section ul,
+div.section ol,
+div.section pre{
+margin:1em 0;
+}
+
+/* headline */
+div.section h1,
+div.section h2,
+div.section h3,
+div.section h4,
+div.section h5,
+div.section h6{
+clear: both;
+}
+div.section h1{
+margin: 0 -20px -0.5em -20px;
+padding: 0;
+border: none;
+background: none;
+font-size: 140%;
+}
+div.section h2{
+margin: 1.5em -15px -0.5em -15px;
+padding: 0;
+border: none;
+background: none;
+font-size: 130%;
+}
+div.section h3{
+margin: 1.5em -10px -0.5em -10px;
+padding: 0;
+border: none;
+background: none;
+font-size: 120%;
+}
+div.section h4{
+margin: 1.5em -5px -0.5em -5px;
+padding: 0;
+border: none;
+background: none;
+font-size: 110%;
+}
+div.section h5{
+margin: 1.5em 0 -0.5em 0;
+padding: 0;
+border: none;
+background: none;
+font-size: 105%;
+}
+div.section h6{
+margin: 1.5em 0 -0.5em;
+padding: 0;
+border: none;
+background: none;
+font-size: 100%;
+}
+
+/* text-align */
+p.alignleft{
+text-align:left;
+}
+p.aligncenter{
+text-align: center;
+}
+p.alignright{
+text-align: right;
+}
+
+/* clear */
+.clear{
+	clear: both;
+}
+.clearleft{
+	clear: left;
+}
+.clearright{
+	clear: right;
+}
+
+/* float */
+.floatleft{
+	float: left;
+}
+.floatright{
+	float: right;
+}
+.floatnone{
+	float: none;
+}
+
+
+/* font style */
+span.important{
+color:#ff0000;
+}
+span.large{
+font-size:120%;
+}
+span.small{
+font-size:84%;
+}
+
+/* detail, auther, date, copy, note */
+p.detail,
+p.author,
+p.date,
+p.copy{
+text-align:right;
+}
+div.section p.note{
+font-size:84%;
+}
+
+/* attention */
+div.section div.attention{
+margin:1em 5px;
+padding:0 5px;
+background:#f5f5f5;
+border:1px solid #ccc;
+}
+
+/* important */
+div.section div.important{
+border:1px solid #ccc;
+padding:0 10px;
+}
+
+/* link type */
+.pdf{
+padding:0 0 0 20px;
+background:url(../img/icon_pdf.png) no-repeat 0 0;
+}
+.doc{
+padding:0 0 0 20px;
+background:url(../img/icon_word.gif) no-repeat 0 0;
+}
+.xls{
+padding:0 0 0 20px;
+background:url(../img/icon_excel.gif) no-repeat 0 0;
+}
+.img{
+padding:0 0 0 20px;
+background:url(../img/icon_image.gif) no-repeat 0 0;
+}
+.sound{
+padding:0 0 0 20px;
+background:url(../img/icon_sound.gif) no-repeat 0 0;
+}
+ul.file{
+padding:3px 5px 0 5px;
+border:1px solid #ccc;
+}
+
+
+/* lists
+-------------------------------------------------- */
+
+/* definition list */ 
+div.section dl{
+}
+div.section dl dt{
+float:left;
+clear:left;
+width:11em;
+margin:0 0.5em 1px 0;
+padding:0.5em 0;
+font-weight:bold;
+}
+div.section dl dd{
+margin:0;
+padding:0.5em 0 0.5em 12em;
+border-bottom:1px dotted #ccc;
+}
+div.section dl dd ul{
+margin:0;
+}
+div.section dl dd dl{
+margin:0;
+}
+div.section dl dd dl dt{
+margin:0 0.5em 0 0;
+font-weight:normal;
+}
+div.section dl dd dl dd{
+border:none;
+}
+div.section dl.titleshort dt{
+width:5em;
+}
+div.section dl.titleshort dd{
+padding:0.5em 0 0.5em 6em;
+}
+div.section dl.titlelong dt{
+width:15em;
+}
+div.section dl.titlelong dd{
+padding:0.5em 0 0.5em 16em;
+}
+div.section dl.break dt {
+float: none;
+width: auto;
+margin: 0;
+padding: 0;
+}
+div.section dl.break dd {
+margin: 0 0 0.5em;
+padding: 0.5em 0;
+}
+
+/* unordered lists */
+div.section ul{
+padding:0 10px;
+}
+div.section ul li{
+list-style:none;
+padding:2px 0 2px 20px;
+background:url(../img/sample.gif) no-repeat 0 9px;
+}
+div.section ul li ol li {
+background: none;
+list-style: decimal;
+padding: 2px 0;
+}
+
+/* ordered lists */
+div.section ol {
+list-style: decimal;
+padding: 0 10px 0 30px;
+}
+div.section ol li {
+padding: 2px 0;
+}
+div.section ol li ul li {
+padding: 2px 0 2px 20px;
+}
+
+/* list gallery style */
+div.section ul.gallery{
+margin:1em -10px 1em 0;
+padding:0;
+}
+div.section ul.gallery li{
+float:left;
+margin:0;
+padding:0 10px 10px 0;
+background:none;
+}
+
+
+/* image
+-------------------------------------------------- */
+
+/* pict */
+p.pict{
+margin:1em 0;
+}
+p.pict2{
+float:left;
+margin:1em 0;
+padding:0 10px 0 0;
+}
+p.pict3{
+float:right;
+margin:1em 0;
+padding:0 0 0 10px;
+}
+p.pict4{
+float:left;
+margin:0 0 1em 0 !important;
+padding:0 10px 0 0 ;
+}
+p.pict5{
+float:right;
+margin:0 0 1em 0 !important;
+padding:0 0 0 10px;
+}
+p.pict6{
+text-align:center;
+}
+
+/* wordpress style */
+img.alignleft {
+float: left;
+padding-right: 10px;
+}
+img.aligncenter,
+dl.aligncenter {
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+img.alignright {
+float: right;
+padding-left: 10px;
+}
+
+
+/* form
+-------------------------------------------------- */
+
+/* text, textarea */
+input[type="text"],
+input.text,
+textarea{
+border:1px solid #999;
+-webkit-appearance: none;
+-webkit-border-radius: 0;
+}
+input[type="text"]:hover,
+input.text:hover,
+textarea:hover{
+border:1px solid #666;
+}
+input[type="text"]:focus,
+input.text:focus,
+textarea:focus{
+border:1px solid #666;
+}
+input[type="text"],
+input.text{
+width:200px;
+}
+textarea{
+width:400px;
+}
+input.shorttext{
+width:100px;
+}
+input.longtext{
+width:400px;
+}
+
+/* button */
+p.submit{
+text-align:center;
+}
+input[type="submit"],
+input.submit,
+input[type="button"],
+input.button{
+display: inline-block;
+*display: inline;
+*zoom: 1;
+margin: 0 5px;
+padding: 0.5em 1em;
+border: 1px solid #fff;
+background: #eee;
+color: #333;
+font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'Lucida Sans Unicode','Lucida Grande','Verdana','ＭＳ Ｐゴシック',sans-serif;
+_font-family: 'ＭＳ Ｐゴシック','MS PGothic',Sans-Serif;
+cursor: pointer;
+-webkit-border-radius: 0;
+}
+input[type="submit"]:hover,
+input.submit:hover,
+input[type="button"]:hover,
+input.button:hover{
+background: #333;
+color: #fff;
+}
+
+/* notation */
+form dl dt span.attention,
+form table tr th span.attention,
+form dl dt span.require,
+form table tr th span.require{
+color: #f30;
+font-weight: normal;
+font-size: 80%;
+}
+form dl dd span.attention{
+background: #FFF0EC;
+font-size: 100%;
+padding: 0 5px;
+color: #f30;
+}
+form dl dd span.example{
+color:#666;
+font-size:90%;
+}
+
+/* other */
+input.alphanumeric,
+textarea.alphanumeric{
+ime-mode:disabled;
+}
+
+
+/* table
+-------------------------------------------------- */
+
+/* calendar */
+table caption span.thismonth{
+font-size:200%;
+font-weight:bold;
+padding:0 20px;
+}
+table .today{
+}
+table .holiday,
+table .sunday{
+background:#FFF0EC;
+}
+table .saturday{
+background:#E1F4FF;
+}
+
+
+/* pager
+-------------------------------------------------- */
+
+div#contents div.section ul.navigation.pager{
+padding:0;
+text-align:center;
+}
+div#contents div.section ul.navigation.pager li{
+display: inline-block;
+*display: inline;
+*zoom: 1;
+float:none;
+padding:0 2px;
+white-space:normal;
+background:none;
+}
+div#contents div.section ul.navigation.pager li.pager,
+div#contents div.section ul.navigation.pager li a{
+display: inline-block;
+*display: inline;
+*zoom: 1;
+border:1px solid #ccc;
+padding:0.2em 0.5em;
+}
+div#contents div.section ul.navigation.pager li.selected{
+font-weight:bold;
+}
+/* pager short */
+div#contents div.section ul.navigation.pager.short li.prev{
+float:left;
+}
+div#contents div.section ul.navigation.pager.short li.next{
+float:right;
+}
+div.section p.page{
+text-align:center;
+font-size:84%;
+}
+
+
+/* tab
+-------------------------------------------------- */
+
+div.tabarea ul.tab{
+margin:1em 0 0 0;
+padding:0;
+}
+div.tabarea ul.tab li{
+float:left;
+padding:0;
+margin:0;
+width:19%;
+background:none;
+}
+div.tabarea ul.tab li a{
+display:block;
+position:relative;
+bottom:-1px;
+margin:0 10px 0 0;
+padding:2px 0;
+border:1px solid #ccc;
+border-bottom:1px solid #999;
+background:#eee;
+color:#666;
+text-align:center;
+text-decoration:none;
+}
+div.tabarea ul.tab li.active a,
+div.tabarea ul.tab li.active a:hover{
+position:relative;
+border:1px solid #999;
+border-bottom:1px solid #fff;
+background:#fff;
+color:#333;
+}
+div.tabarea ul.tab li a:hover{
+position:relative;
+border:1px solid #999;
+border-bottom:1px solid #999;
+color:#333;
+}
+div.tabarea div.tabdetail{
+border:1px solid #999;
+padding:0 10px;
+}

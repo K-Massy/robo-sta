@@ -1,0 +1,254 @@
+@charset "utf-8";
+
+div#wrapper{
+width:960px;
+margin:0 auto;
+font-size:84%;
+text-align:center;
+background:#fff;
+}
+div#header,
+div#body,
+div#footer{
+margin:0 auto;
+text-align:left;
+}
+div#header{
+position:relative;
+height:115px !important;
+}
+div#body{
+}
+div#contents{
+float:left;
+width:720px;
+}
+div#contents_navigation{
+float:right;
+width:230px;
+}
+div#footer{
+width:auto;
+clear:both;
+height:1%;
+}
+
+
+
+/*
+--------------------------------------------------------
+header
+--------------------------------------------------------
+*/
+/* title */
+div#header h1,
+div#header p.title{
+position:absolute;
+top:0;
+left:0;
+margin:0;
+padding:0;
+border: none;
+background: none;
+z-index:10;
+font-size:150%;
+font-weight:bold;
+}
+div#header h1 img,
+div#header p.title img{
+}
+
+/* description */
+div#header p.description{
+font-size:84%;
+position:absolute;
+top:2.5em;
+}
+
+/* navigation*/
+div#header ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+div#header ul li{
+float:left;
+}
+div#header ul.navigation{
+position:absolute;
+bottom:0;
+}
+div#header ul.sub_navigation{
+position:absolute;
+top:45px;
+right:0;
+}
+
+/* fontsize */
+div#header dl.fontsize{
+position:absolute;
+right:0;
+top:10px;
+}
+div#header dl.fontsize dt{
+width:auto;
+float:left;
+display:inline;
+padding:0 5px 0 0;
+}
+div#header dl.fontsize dd,
+div#header dl.fontsize dd ul{
+display:inline;
+}
+div#header dl.fontsize dd ul li{
+padding:0 0 0 4px;
+float:left;
+}
+
+/* skip */
+p.skip{
+visibility:hidden;
+height:0;
+}
+
+
+
+/*
+--------------------------------------------------------
+contents
+--------------------------------------------------------
+*/
+/* topic path */
+ul.topic_path{
+margin:0 0 0.5em 0;
+padding:0.5em 0;
+font-size:85%;
+text-align:left;
+}
+ul.topic_path li{
+padding:0 17px 0 0;
+display:inline;
+background:url(../img/topicpath_arrow.gif) no-repeat 100% 50%;
+}
+ul.topic_path li.selected{
+padding:0;
+background:none;
+}
+
+/* section */
+div.section{
+padding:0 30px 20px 30px;
+line-height:1.7;
+clear:both;
+}
+div.section div.section{
+padding:0;
+}
+
+
+
+/*
+--------------------------------------------------------
+contents_navigation
+--------------------------------------------------------
+*/
+/* navigation */
+div#contents_navigation ul.navigation{
+margin:5px;
+padding:0;
+}
+div#contents_navigation ul.navigation li{
+padding:0 0 10px 0;
+}
+div#contents_navigation ul.navigation li ul{
+margin:5px 0 0 0;
+padding:0 0 0 10px;
+font-size:84%;
+}
+div#contents_navigation ul.navigation li ul li{
+padding:0 0 0 10px;
+margin:0 0 0.5em 0;
+}
+
+
+
+/*
+--------------------------------------------------------
+footer
+--------------------------------------------------------
+*/
+/* copyright*/
+div#footer address{
+clear:both;
+margin:0 auto;
+padding:0.7em 0;
+}
+
+/* pagetop */
+p.pagetop{
+text-align:right;
+}
+div#footer p.pagetop{
+position:absolute;
+top:-1.7em;
+right:10px;
+margin:0;
+}
+
+
+/*
+--------------------------------------------------------
+clearfix
+--------------------------------------------------------
+*/
+div#header:after,
+div#body:after,
+div#footer:after,
+div.section:after,
+ul:after,
+div.section dl:after,
+div#navigation dl dd:after,
+div#sub_navigation dl dd:after,
+.clearfix:after{
+content:" ";
+display:block;
+clear:both;
+height:1%;
+visibility:hidden;
+}
+div#header,
+div#body,
+div#footer,
+div.section,
+ul,
+div.section dl,
+div#navigation dl dd,
+div#sub_navigation dl dd,
+.clearfix{
+min-height:1px;
+display:inline-table;
+}
+/* Mac IE \*/
+* html div#header,
+* html div#body,
+* html div#footer,
+* html div.section,
+* html ul,
+* html div.section dl,
+* html div#navigation dl dd,
+* html div#sub_navigation dl dd,
+* html .clearfix{
+height:1px;
+}
+div#header,
+div#body,
+div#footer,
+div.section,
+ul,
+div.section dl,
+div#navigation dl dd,
+div#sub_navigation dl dd,
+.clearfix{
+display:block;
+}
+/* Mac IE */

@@ -1,0 +1,72 @@
+// setting
+// --------------------------------------------------
+
+// pc
+$ie6:              false;
+$ie7:              false;
+$ie8:              true;
+$ie9:              true;
+$ie10:             true;
+
+// sp
+$responsive:       true;
+$retina:           "screen and (-webkit-device-pixel-ratio:2), (min-resolution: 2dppx)";
+$break-sp:         640px;
+$break-iphone:     320px;
+$break-ipad:       768px;
+
+
+// directory
+$imgDir:           '../img';
+$fontDir:          '../font';
+
+// sprite
+$sprites:     sprite-map("icons/*.png", $spacing: 20px, $layout: horizontal);
+$sprites-img: sprite-url($sprites);
+
+
+// column size
+// --------------------------------------------------
+
+$body-width:       960px;
+$body-min-width:   0;
+$body-max-width:   'none';
+
+$contents-width:   700px;
+$sidebar-width:    220px;
+
+// header
+$header-height:    100px;
+
+
+// main color
+// --------------------------------------------------
+
+$color-white:      #FFFFFF;
+$color-gray:       #666666;
+$color-black:      #333333;
+
+$color-red:        #FF0000;
+$color-blue:       #0000FF;
+$color-green:      #00FF00;
+
+
+// typography
+// --------------------------------------------------
+
+// font
+$font-family:        'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'Lucida Sans Unicode','Lucida Grande','Verdana','ＭＳ Ｐゴシック',sans-serif;
+$font-size:          13; // px
+$line-height:        1.6;
+
+// text color
+$color:              #333333;
+
+// link color
+$link-color:         #1A0DAB;
+$link-color-visited: #660099;
+$link-color-hover:   #1A0DAB;
+$link-color-active:  #1A0DAB;
+
+
+

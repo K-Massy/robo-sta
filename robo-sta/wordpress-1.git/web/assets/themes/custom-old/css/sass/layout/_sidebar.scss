@@ -1,0 +1,11 @@
+/* sidebar
+-------------------------------------------------- */
+
+.l_sidebar{
+	float: right;
+	width: $sidebar-width;
+	@include media(ipad) {
+		float: none;
+		width: auto;
+	}
+}

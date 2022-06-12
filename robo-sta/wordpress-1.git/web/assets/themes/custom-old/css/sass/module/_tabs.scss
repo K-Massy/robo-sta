@@ -1,0 +1,95 @@
+/* tabs
+-------------------------------------------------- */
+
+// base
+.tab_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    & > li{
+        float: left;
+        margin: 10px 0 0;
+        padding: 0;
+    }
+}
+.tab_content{
+    clear: both;
+}
+
+/* active */
+.is_tab_active{
+    display: block;
+}
+
+/* vertical */
+.tab_vertical{
+    .tab_list{
+        float: left;
+        & > li{
+            float: none;
+        }
+    }
+    .tab_content{
+        clear: none;
+    }
+}
+
+.tab_list,
+.tab_vertical{
+    @include clearfix;
+}
+
+
+/* custom */
+$tab-border-color: #CCCCCC;
+
+.tab_list{
+    border-bottom: 1px solid $tab-border-color;
+    & > li{
+        margin-bottom: -1px;
+    }
+    a{
+        display: block;
+        margin-right: 5px;
+        padding: 5px 10px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $tab-border-color;
+        background-color: #F6F6F6;
+        text-decoration: none;
+    }
+}
+.tab_content{
+    padding: 5px 10px;
+}
+
+/* active */
+.tab_list .is_tab_active > a{
+    border-bottom-width: 1px;
+    border-bottom-color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+/* vertical */
+.tab_vertical{
+    .tab_list{
+        border-bottom: none;
+        border-right: 1px solid $tab-border-color;
+        & > li{
+            margin-right: -1px;
+            margin-bottom: 0;
+        }
+        a{
+            margin: 0 0 5px;
+        }
+    }
+}
+.tab_vertical .tab_content{
+    overflow: hidden;
+}
+
+/* vertical - active */
+.tab_vertical .tab_list .is_tab_active > a{
+    border-right-color: #FFFFFF;
+    border-bottom-color: $tab-border-color;
+}

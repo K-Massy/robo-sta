@@ -1,0 +1,18 @@
+[SSH terminal or SFTP]
+ssh dev-robo-sta@dev-robo-sta.sakura.ne.jp
+user:dev-robo-sta
+pass:9TnyC.zh3/5P
+
+[BASIC]
+user:robosta
+password:robosta
+
+[develop]
+wordpress-admin:
+user:admin_robo_sta
+password:admin_ROBO_STA_2022
+
+[develop-db]
+domain:mysql57.dev-robo-sta.sakura.ne.jp
+user:dev-robo-sta
+password:admin_ROBO_STA_2022

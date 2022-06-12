@@ -1,0 +1,31 @@
+/**
+ * Layout
+ */
+
+.l_wrapper{
+    position: relative;
+    word-wrap: break-word;
+    margin: 0 auto;
+    padding: 0;
+    width: $body-width;
+    @include media(ipad) {
+        width: auto;
+    }
+}
+
+.l_main{
+    @include clearfix;
+    position: relative;
+    width: $body-width;
+    margin: 0 auto;
+    padding: 0 0 125px;
+    @include media(ipad) {
+        width: auto;
+    }
+}
+
+
+@import '_header';
+@import '_contents';
+@import '_sidebar';
+@import '_footer';

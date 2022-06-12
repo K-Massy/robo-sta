@@ -1,0 +1,163 @@
+/* lists
+-------------------------------------------------- */
+
+ul{
+    list-style: disc;
+}
+ol{
+    list-style: decimal;
+}
+
+ul ul,
+ol ul{
+    list-style: circle;
+}
+
+
+ul ul,
+ul ol,
+ol ol,
+ol ul{
+    margin-bottom: 0;
+}
+
+
+.list{
+    & > li{
+        float: none;
+        // background-image: 
+    }
+
+    &.list_type_{
+        // background-image: 
+    }
+    &.list_type_{
+        // background-image: 
+    }
+    &.list_type_{
+        // background-image: 
+    }
+    &.list_type_{
+        // background-image: 
+    }
+}
+
+/* gallery */
+ul.gallery{
+    list-style: none;
+    clear: both;
+    @include clearfix;
+    padding-left: 0;
+    & > li{
+        float: left;
+        margin-right: 10px;
+    }
+}
+
+
+/* definition lists */
+dl{
+    dt{
+        font-weight: bold;
+    }
+    dd{}
+}
+
+dl.horizontal{
+    dt{
+        float: left;
+        width: 9em;
+    }
+    dd{
+        padding-left: 10em;
+    }
+}
+
+// article,
+// section,
+// .article,
+// .section{
+//     dl{
+//         dt{
+//             float: left;
+//             clear: left;
+//             width: 8em;
+//             margin: 0 0.5em 1px 0;
+//             padding: 0.5em 0 1em;     
+//         }
+//         dd{
+//             margin: 0 0 0.5em;
+//             padding: 0.5em 0 1em;
+//             padding-left: 9em;
+//             border-bottom: 1px dashed #D08F17;
+//             ul{
+//                 margin: 0;
+//             }
+//             dl{
+//                 margin: 0;
+//                 dt{
+//                     margin: 0 0.5em 0 0;
+//                     font-weight: normal;
+//                 }
+//                 dd{
+//                     border: none;
+//                 }
+//             }
+//         }
+//     }
+//     dl.titleshort{
+//         dt{
+//             width: 5em;
+//         }
+//         dd{
+//             padding-left: 6em;
+//         }
+//     }
+//     dl.titlelong{
+//         dt{
+//             width: 12em;
+//         }
+//         dd{
+//             padding-left: 13em;
+//         }
+//     }
+//     dl.break{
+//         dt{
+//             float: none;
+//             width: auto;
+//             margin: 0;
+//             padding: 0;
+//         }
+//         dd{
+//             margin: 0 0 0.5em;
+//             padding: 0.5em 0;
+//         }
+//     }
+// }
+
+
+
+.tableview{
+    margin: 0 0 1em;
+    $border-color: #DDDDDD;
+    border: 1px solid $border-color;
+    @include border-radius(4px);
+    .tableview_heading{
+        padding: .5em 20px;
+        background-color: #EFEFEF;
+        &:first-child{
+            margin: 0;
+        }
+    }
+    .tableview_list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .tableview_item{
+        border-top: 1px solid $border-color;
+        a,label{
+            display: block;
+        }
+    }
+}

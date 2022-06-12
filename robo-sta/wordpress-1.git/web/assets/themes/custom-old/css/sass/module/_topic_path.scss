@@ -1,0 +1,22 @@
+/* topic path
+-------------------------------------------------- */
+.topic_path{
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		li{
+			margin: 0 0 15px;
+			@include inline-block;
+			&:after{
+				content: '>';
+				margin: 0 3px 0 8px;
+			}
+		}
+		li.is_current{
+			&:after{
+				content: none;
+			}
+		}
+	}
+}

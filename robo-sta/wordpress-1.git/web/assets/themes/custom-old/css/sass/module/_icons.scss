@@ -1,0 +1,22 @@
+/* icons
+-------------------------------------------------- */
+
+/* extension */
+a{
+    &.pdf{
+        &:before{
+            content: '';
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url("#{$imgDir}/icons/pdf_small.png");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+
+            margin-right: 5px;
+        }
+    }
+    &.xls{}
+    &.doc{}
+    &.ppt{}
+}

@@ -1,0 +1,11 @@
+/* contents
+-------------------------------------------------- */
+
+.l_contents{
+	float: left;
+	width: $contents-width;
+	@include media(ipad) {
+		float: none;
+		width: auto;
+	}
+}
