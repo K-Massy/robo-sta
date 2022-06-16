@@ -1,5 +1,13 @@
 .navbar{
   padding-right: rem(48);
+  @include media-breakpoint-up(lg) {
+    position: fixed;
+    top:0;
+    left:256px;
+    z-index:10;
+    background-color: $white;
+    width: calc(100% - 256px);
+  }
   &-expand-lg .navbar-nav .dropdown-menu {
     @include media-breakpoint-up(lg) {
       position: absolute;

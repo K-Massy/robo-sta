@@ -11406,6 +11406,17 @@ a:hover img, a:focus img {
 }
 
 @media (min-width: 992px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 256px;
+    z-index: 10;
+    background-color: #fff;
+    width: calc(100% - 256px);
+  }
+}
+
+@media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
     right: 10px;
@@ -12109,9 +12120,10 @@ a {
 }
 
 .main-content {
-  width: calc(100% - 256px);
   position: relative;
   left: 256px;
+  padding-top: 58px;
+  width: calc(100% - 256px);
 }
 
 body {
