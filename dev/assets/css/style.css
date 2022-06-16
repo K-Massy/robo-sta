@@ -11401,6 +11401,12 @@ a:hover img, a:focus img {
   margin-bottom: 0;
 }
 
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: block;
+  }
+}
+
 /* labels
 -------------------------------------------------- */
 .label {
@@ -11968,13 +11974,71 @@ a {
 }
 
 .sidebar {
-  background-color: #fff;
+  background-color: #e9ecef;
   width: 16rem;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   z-index: 100;
+  padding: 0.5rem 1rem;
+  overflow-y: scroll;
+}
+
+.sidebar-header {
+  padding-bottom: 1rem;
+}
+
+.sidebar-toggler {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 30px;
+  width: 30px;
+  background-color: #e9ecef;
+}
+
+.sidebar-visitor {
+  padding-bottom: 2rem;
+}
+
+.sidebar-visitor__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-visitor__item .btn {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.sidebar-visitor__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.sidebar-menu:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-menu__header {
+  color: #6c757d;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.sidebar-menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu__item {
+  padding: 0.25rem 0;
+}
+
+.sidebar-menu__link {
+  color: #6c757d;
 }
 
 .footer {

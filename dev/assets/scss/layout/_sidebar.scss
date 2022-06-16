@@ -1,9 +1,58 @@
 .sidebar{
-  background-color: $white;
+  background-color: $light;
   width: rem(256);
   position: fixed;
   top:0;
   left:0;
   height: 100%;
   z-index:100;
+  padding:rem(8) rem(16);
+  overflow-y: scroll;
+  &-header{
+    padding-bottom: rem(16);
+  }
+  &-toggler{
+    appearance: none;
+    height: 30px;
+    width: 30px;
+    background-color: $gray-200;
+  }
+  &-visitor{
+    padding-bottom: rem(32);
+    &__list{
+      list-style: none;
+      padding:0;
+      margin:0;
+    }
+    &__item{
+      .btn{
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+      }
+      &:not(:last-child){
+        margin-bottom: rem(16);
+      }
+    }
+  }
+  &-menu{
+    &:not(:last-child){
+      margin-bottom: rem(24);
+    }
+    &__header{
+      color: $dark;
+      font-weight: bold;
+      font-size: rem(18);
+    }
+    &__list{
+      list-style: none;
+      padding:0;
+      margin:0;
+    }
+    &__item{
+      padding: rem(4) 0;
+    }
+    &__link{
+      color: $dark;
+    }
+  }
 }

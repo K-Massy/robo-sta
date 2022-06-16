@@ -35,194 +35,92 @@
 			<br>JavaScriptを有効にするか、JavaScriptが使用可能なブラウザでアクセスして下さい。</div>
 	</noscript>
 	<div class="robosta">
-		<div class="sidebar bg-light">
-			<nav class="navbar navbar-expand-lg navbar-light">
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+		<div class="sidebar">
+			<div class="sidebar-header">
+				<button class="sidebar-toggler" type="button" data-toggle="collapse" data-target="#sidebarSupportedContent" aria-controls="sidebarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="sidebar-toggler-icon"></span>
 				</button>
-				<nav class="navbar">
-					<ul class="nav bd-sidenav">
-						<li class="nav-item active mr-sm-2"><a class="btn btn-outline-success btn-block" href="#">ログイン<span class="sr-only">(current)</span></a>
+			</div>
+			<nav class="sidebar-visitor">
+				<nav class="sidebar-visitor__nav">
+					<ul class="sidebar-visitor__list">
+						<li class="sidebar-visitor__item"><a class="btn btn-outline-success btn-block" href="#">ログイン<span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item active"><a class="btn btn-info btn-block" href="#">会員登録<span class="sr-only">(current)</span></a>
+						<li class="sidebar-visitor__item"><a class="btn btn-info btn-block" href="#">会員登録<span class="sr-only">(current)</span></a>
 						</li>
 					</ul>
 				</nav>
 			</nav>
-			<nav class="bd-links" id="bd-docs-nav">
-				<div class="bd-toc-item">
-					<nav class="navbar"><a class="bd-toc-link" href="/docs/4.3/getting-started/introduction/">Getting started</a>
-					</nav>
-					<nav class="navbar">
-						<ul class="nav bd-sidenav">
-							<li><a href="/docs/4.3/getting-started/introduction/">Introduction</a>
+			<nav class="sidebar-item">
+				<div class="sidebar-menu"><a class="sidebar-menu__header" href="/docs/4.3/getting-started/introduction/">バンダイ</a>
+					<nav class="sidebar-menu__nav">
+						<ul class="sidebar-menu__list">
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/getting-started/introduction/">30MM</a>
 							</li>
-							<li><a href="/docs/4.3/getting-started/download/">Download</a>
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/getting-started/download/">SMP/ミニプラ</a>
 							</li>
-							<li><a href="/docs/4.3/getting-started/contents/">Contents</a>
-							</li>
-							<li><a href="/docs/4.3/getting-started/browsers-devices/">Browsers & devices</a>
-							</li>
-							<li><a href="/docs/4.3/getting-started/javascript/">JavaScript</a>
-							</li>
-							<li><a href="/docs/4.3/getting-started/theming/">Theming</a>
-							</li>
-							<li><a href="/docs/4.3/getting-started/build-tools/">Build tools</a>
-							</li>
-							<li><a href="/docs/4.3/getting-started/webpack/">Webpack</a>
-							</li>
-							<li><a href="/docs/4.3/getting-started/accessibility/">Accessibility</a>
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/getting-started/contents/">その他</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
-				<div class="bd-toc-item"><a class="bd-toc-link" href="/docs/4.3/layout/overview/">Layout</a>
-					<nav class="navbar">
-						<ul class="nav bd-sidenav">
-							<li><a href="/docs/4.3/layout/overview/">Overview</a>
+				<div class="sidebar-menu"><a class="sidebar-menu__header" href="/docs/4.3/layout/overview/">コトブキヤ</a>
+					<nav class="sidebar-menu__nav">
+						<ul class="sidebar-menu__list">
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/layout/overview/">フレームアームズ（＋MSG）</a>
 							</li>
-							<li><a href="/docs/4.3/layout/grid/">Grid</a>
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/layout/grid/">ヘキサギア</a>
 							</li>
-							<li><a href="/docs/4.3/layout/utilities-for-layout/">Utilities for layout</a>
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/layout/utilities-for-layout/">ゾイド</a>
 							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="bd-toc-item"><a class="bd-toc-link" href="/docs/4.3/content/reboot/">Content</a>
-					<nav class="navbar">
-						<ul class="nav bd-sidenav">
-							<li><a href="/docs/4.3/content/reboot/">Reboot</a>
-							</li>
-							<li><a href="/docs/4.3/content/typography/">Typography</a>
-							</li>
-							<li><a href="/docs/4.3/content/code/">Code</a>
-							</li>
-							<li><a href="/docs/4.3/content/images/">Images</a>
-							</li>
-							<li><a href="/docs/4.3/content/tables/">Tables</a>
-							</li>
-							<li><a href="/docs/4.3/content/figures/">Figures</a>
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/layout/grid/">その他</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
-				<div class="bd-toc-item active"><a class="bd-toc-link" href="/docs/4.3/components/alerts/">Components</a>
-					<nav class="navbar">
-						<ul class="nav bd-sidenav">
-							<li><a href="/docs/4.3/components/alerts/">Alerts</a>
-							</li>
-							<li><a href="/docs/4.3/components/badge/">Badge</a>
-							</li>
-							<li><a href="/docs/4.3/components/breadcrumb/">Breadcrumb</a>
-							</li>
-							<li><a href="/docs/4.3/components/buttons/">Buttons</a>
-							</li>
-							<li><a href="/docs/4.3/components/button-group/">Button group</a>
-							</li>
-							<li><a href="/docs/4.3/components/card/">Card</a>
-							</li>
-							<li><a href="/docs/4.3/components/carousel/">Carousel</a>
-							</li>
-							<li><a href="/docs/4.3/components/collapse/">Collapse</a>
-							</li>
-							<li><a href="/docs/4.3/components/dropdowns/">Dropdowns</a>
-							</li>
-							<li><a href="/docs/4.3/components/forms/">Forms</a>
-							</li>
-							<li><a href="/docs/4.3/components/input-group/">Input group</a>
-							</li>
-							<li><a href="/docs/4.3/components/jumbotron/">Jumbotron</a>
-							</li>
-							<li class="active bd-sidenav-active"><a href="/docs/4.3/components/list-group/">List group</a>
-							</li>
-							<li><a href="/docs/4.3/components/media-object/">Media object</a>
-							</li>
-							<li><a href="/docs/4.3/components/modal/">Modal</a>
-							</li>
-							<li><a href="/docs/4.3/components/navs/">Navs</a>
-							</li>
-							<li><a href="/docs/4.3/components/navbar/">Navbar</a>
-							</li>
-							<li><a href="/docs/4.3/components/pagination/">Pagination</a>
-							</li>
-							<li><a href="/docs/4.3/components/popovers/">Popovers</a>
-							</li>
-							<li><a href="/docs/4.3/components/progress/">Progress</a>
-							</li>
-							<li><a href="/docs/4.3/components/scrollspy/">Scrollspy</a>
-							</li>
-							<li><a href="/docs/4.3/components/spinners/">Spinners</a>
-							</li>
-							<li><a href="/docs/4.3/components/toasts/">Toasts</a>
-							</li>
-							<li><a href="/docs/4.3/components/tooltips/">Tooltips</a>
+				<div class="sidebar-menu"><a class="sidebar-menu__header" href="/docs/4.3/content/reboot/">グッドスマイルカンパニー</a>
+					<nav class="sidebar-menu__nav">
+						<ul class="sidebar-menu__list">
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/content/reboot/">MODEROID</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
-				<div class="bd-toc-item"><a class="bd-toc-link" href="/docs/4.3/utilities/borders/">Utilities</a>
-					<nav class="navbar">
-						<ul class="nav bd-sidenav">
-							<li><a href="/docs/4.3/utilities/borders/">Borders</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/clearfix/">Clearfix</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/close-icon/">Close icon</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/colors/">Colors</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/display/">Display</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/embed/">Embed</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/flex/">Flex</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/float/">Float</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/image-replacement/">Image replacement</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/overflow/">Overflow</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/position/">Position</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/screen-readers/">Screen readers</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/shadows/">Shadows</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/sizing/">Sizing</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/spacing/">Spacing</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/stretched-link/">Stretched link</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/text/">Text</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/vertical-align/">Vertical align</a>
-							</li>
-							<li><a href="/docs/4.3/utilities/visibility/">Visibility</a>
+				<div class="sidebar-menu"><a class="sidebar-menu__header" href="/docs/4.3/content/reboot/">MaxFactory</a>
+					<nav class="sidebar-menu__nav">
+						<ul class="sidebar-menu__list">
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/content/reboot/">PLAMAX</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
-				<div class="bd-toc-item"><a class="bd-toc-link" href="/docs/4.3/extend/approach/">Extend</a>
-					<nav class="navbar">
-						<ul class="nav bd-sidenav">
-							<li><a href="/docs/4.3/extend/approach/">Approach</a>
-							</li>
-							<li><a href="/docs/4.3/extend/icons/">Icons</a>
+				<div class="sidebar-menu"><a class="sidebar-menu__header" href="/docs/4.3/content/reboot/">ボークス</a>
+					<nav class="sidebar-menu__nav">
+						<ul class="sidebar-menu__list">
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/content/reboot/">ブロッカーズ</a>
 							</li>
 						</ul>
 					</nav>
 				</div>
-				<div class="bd-toc-item"><a class="bd-toc-link" href="/docs/4.3/about/overview/">About</a>
-					<nav class="navbar">
-						<ul class="nav bd-sidenav">
-							<li><a href="/docs/4.3/about/overview/">Overview</a>
+				<div class="sidebar-menu"><a class="sidebar-menu__header" href="/docs/4.3/content/reboot/">アオシマ</a>
+					<nav class="sidebar-menu__nav">
+						<ul class="sidebar-menu__list">
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/content/reboot/">ACKS</a>
 							</li>
-							<li><a href="/docs/4.3/about/brand/">Brand</a>
+						</ul>
+					</nav>
+				</div>
+				<div class="sidebar-menu"><a class="sidebar-menu__header" href="/docs/4.3/content/reboot/">ハセガワ</a>
+					<nav class="sidebar-menu__nav">
+						<ul class="sidebar-menu__list">
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/content/reboot/">その他</a>
 							</li>
-							<li><a href="/docs/4.3/about/license/">License</a>
-							</li>
-							<li><a href="/docs/4.3/about/translations/">Translations</a>
+						</ul>
+					</nav>
+				</div>
+				<div class="sidebar-menu"><a class="sidebar-menu__header" href="/docs/4.3/content/reboot/">その他</a>
+					<nav class="sidebar-menu__nav">
+						<ul class="sidebar-menu__list">
+							<li class="sidebar-menu__item"><a class="sidebar-menu__link" href="/docs/4.3/content/reboot/">海外製のメカ</a>
 							</li>
 						</ul>
 					</nav>
@@ -233,7 +131,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<a class="navbar-brand" href="./">
 					<img class="d-inline-block align-top" src="https://getbootstrap.jp/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">&nbsp;Bootstrap</a>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<div class="navbar-collapse">
 					<form class="form-inline my-2 my-lg-0">
 						<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>

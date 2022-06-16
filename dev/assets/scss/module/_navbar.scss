@@ -1,0 +1,8 @@
+.navbar-expand-lg{
+  .navbar-toggler{
+    @include media-breakpoint-up(lg) {
+      display: block;
+    }
+  }
+}
+
