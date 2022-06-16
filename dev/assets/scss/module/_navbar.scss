@@ -1,8 +1,10 @@
-.navbar-expand-lg{
-  .navbar-toggler{
+.navbar{
+  padding-right: rem(48);
+  &-expand-lg .navbar-nav .dropdown-menu {
     @include media-breakpoint-up(lg) {
-      display: block;
+      position: absolute;
+      right: 10px;
+      left: auto;
     }
   }
 }
-

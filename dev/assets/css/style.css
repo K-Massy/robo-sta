@@ -11401,9 +11401,15 @@ a:hover img, a:focus img {
   margin-bottom: 0;
 }
 
+.navbar {
+  padding-right: 3rem;
+}
+
 @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-toggler {
-    display: block;
+  .navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    right: 10px;
+    left: auto;
   }
 }
 
@@ -11974,19 +11980,23 @@ a {
 }
 
 .sidebar {
-  background-color: #e9ecef;
   width: 16rem;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   z-index: 100;
-  padding: 0.5rem 1rem;
+  padding: 3.125rem 1rem 0.5rem 1rem;
   overflow-y: scroll;
 }
 
 .sidebar-header {
-  padding-bottom: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding: 0.5rem 1.5rem;
+  width: 16rem;
 }
 
 .sidebar-toggler {
@@ -11996,10 +12006,11 @@ a {
   height: 30px;
   width: 30px;
   background-color: #e9ecef;
+  border: none;
 }
 
 .sidebar-visitor {
-  padding-bottom: 2rem;
+  margin: 0.5rem 0 1.5rem;
 }
 
 .sidebar-visitor__list {
