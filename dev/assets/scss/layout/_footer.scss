@@ -1,0 +1,28 @@
+.footer{
+  background-color: $dark;
+  color: $white;
+  &-nav{
+    padding: rem(8);
+    &__list{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom:0;
+    }
+    &__item{
+      &:not(:last-child){
+        margin-right: rem(24);
+      }
+    }
+    &__link{
+      font-size: rem(13);
+      color: $white;
+    }
+  }
+  &-copyright{
+    padding: rem(8);
+    p{
+      margin-bottom:0;
+    }
+  }
+}

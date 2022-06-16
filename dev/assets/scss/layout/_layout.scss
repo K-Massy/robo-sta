@@ -1,0 +1,10 @@
+.robosta{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-content{
+  width: calc(100% - 256px);
+  position: relative;
+  left: 256px;
+}

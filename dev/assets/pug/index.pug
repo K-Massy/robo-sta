@@ -1,0 +1,96 @@
+extends /_include/_layout/_layout
+
+block vars
+	- page.title       = site.name;
+	- page.description = site.description;
+	- page.keywords    = site.keywords;
+	- page.bodyclass   = 'home';
+	- is_home          = true;
+
+block page_contents
+
+	article
+
+	article
+		.content-block
+			.container-fluid
+				.js-hero.row
+					- for ( var i=0; i<9; i++ )
+						div
+							a.card(href="#")
+								.card-hero(style="background-image:url(https://placehold.jp/1920x671.png);")
+		.content-block
+			.post-card
+				.section-heading
+					h2.section-heading__title
+						| おすすめ
+					a.section-heading__more(href="#")
+						| もっと見る
+				.post-card__inner
+					.js-list
+						- for ( var i=0; i<9; i++ )
+							include ./_include/_parts/_post
+		.content-block
+			.post-card
+				.section-heading
+					h2.section-heading__title
+						| 新着作品
+					a.section-heading__more(href="#")
+						| もっと見る
+				.post-card__inner
+					.js-list
+						- for ( var i=0; i<9; i++ )
+							include ./_include/_parts/_post
+		.content-block
+			.post-card
+				.section-heading
+					h2.section-heading__title
+						| カテゴリ1
+					a.section-heading__more(href="#")
+						| もっと見る
+				.post-card__inner
+					.js-list
+						- for ( var i=0; i<9; i++ )
+							include ./_include/_parts/_post
+		.content-block
+			.post-card
+				.section-heading
+					h2.section-heading__title
+						| カテゴリ2
+					a.section-heading__more(href="#")
+						| もっと見る
+				.section-description 
+					p.text-muted
+						| 次世代スターとして脚光を浴びるパク・ボゴム。彼の魅力をチェックしよう。
+				.post-card__inner
+					.js-list
+						- for ( var i=0; i<9; i++ )
+							include ./_include/_parts/_post
+		.content-block
+			.post-card
+				.section-heading
+					h2.section-heading__title
+						| カテゴリ3
+					a.section-heading__more(href="#")
+						| もっと見る
+				.section-description 
+					p.text-muted
+						| 次世代スターとして脚光を浴びるパク・ボゴム。彼の魅力をチェックしよう。
+				.post-card__inner
+					.js-list
+						- for ( var i=0; i<9; i++ )
+							include ./_include/_parts/_post
+		.content-block
+			.post-card
+				.section-heading
+					h2.section-heading__title
+						| カテゴリ4
+					a.section-heading__more(href="#")
+						| もっと見る
+				.section-description 
+					p.text-muted
+						| 次世代スターとして脚光を浴びるパク・ボゴム。彼の魅力をチェックしよう。
+				.post-card__inner
+					.js-list
+						- for ( var i=0; i<9; i++ )
+							include ./_include/_parts/_post

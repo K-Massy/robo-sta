@@ -1,0 +1,39 @@
+include /_config
+include /_include/_function/_function
+
+block vars
+	- var is_home = false
+
+
+doctype html
+html(lang= site.language, itemscope, itemtype=`${ is_home ? 'https://schema.org/WebSite' : 'https://schema.org/WebPage'}`)
+
+	include /_include/_head
+
+	body#top(class= page.bodyclass)
+
+		include ../_parts/_noscript
+		.robosta
+			include ./_side
+			.main-content
+				include ./_header
+
+				main.main(role="main")
+
+					if has_class( 'home' )
+						block page_contents
+					else if has_class( 'post' )
+						article.page
+							.page-contents
+								.container
+									block page_contents
+					else
+						article.page
+							.page-contents
+								.container
+									block page_contents
+
+
+				include ./_footer
+
+				include /_include/_scripts

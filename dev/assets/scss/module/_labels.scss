@@ -1,0 +1,10 @@
+/* labels
+-------------------------------------------------- */
+
+.label{
+    display: inline-block;
+    color: #fff;
+    padding: 0.1em 1em;
+    &.type-news{ background-color: $red; }
+    &.type-event{ background-color: $blue; }
+}

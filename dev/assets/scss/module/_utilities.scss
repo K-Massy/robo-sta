@@ -1,0 +1,29 @@
+/* utilities
+-------------------------------------------------- */
+.section{
+  &-heading{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: rem(8);
+    &__title{
+      font-weight: 700;
+      font-size: rem(19);
+      margin-bottom:0;
+    }
+    &__more{
+      font-size: rem(13);
+      margin-left: rem(8);
+    }
+  }
+  &-descript{
+    
+  }
+}
+
+.text{
+  &-muted{
+    font-size: rem(11);
+    color: $gray-600;
+  }
+}

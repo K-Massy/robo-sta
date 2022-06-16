@@ -1,0 +1,23 @@
+.card{
+    &[href] {
+        color: $body-color;
+        transition: $transition-base;
+        
+        @include hover {
+            text-decoration: none;
+            opacity: 0.8;
+        }
+    }
+    &-thumbnail{
+        position: relative;
+        padding-top:52.35%;
+        background-size: cover;
+        background-position: center;
+    }
+    &-hero{
+        position: relative;
+        padding-top:35%;
+        background-size: cover;
+        background-position: center;
+    }
+}

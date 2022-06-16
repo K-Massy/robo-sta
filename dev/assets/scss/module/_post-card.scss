@@ -1,0 +1,53 @@
+.post-card{
+  width: 100%;
+  overflow: hidden;
+  .section-heading,
+  .section-description,
+  &__inner{
+    width: 100%;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  .slick{
+    &-track{
+      margin-left:rem(-4);
+      margin-right:rem(-4);
+    }
+    &-slide{
+      padding-left: rem(4);
+      padding-right: rem(4);
+    }
+    &-list{
+      overflow: inherit;
+    }
+  }
+  .card{
+    border: none;
+    &-body{
+      padding: .75rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      &__left{
+        width: 40px;
+      }
+      &__right{
+        width: calc(100% - 40px);
+        padding-left: rem(8);
+      }
+      &__heading{
+        margin-bottom: rem(8);
+      }
+      &__footer{
+        .text-muted{
+          display: block;
+        }
+      }
+    }
+    &-title{
+      font-size: rem(14);
+      font-weight: bold;
+      margin-bottom:0;
+
+    }
+  }
+}

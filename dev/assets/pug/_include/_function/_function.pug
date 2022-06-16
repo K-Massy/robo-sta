@@ -1,0 +1,20 @@
+-
+	/**
+	 * ページ判別
+	 */
+
+	function has_class( name ) {
+		/**
+		 * Return true if the class is assigned to <body>.
+		 * ex: if has_class( 'classname' )
+		 */
+		return page.bodyclass.indexOf( name ) != -1;
+	}
+
+	function is_page( name ) {
+		/**
+		 * Return true if the class is assigned to <body>.
+		 * ex: if is_page( 'classname' )
+		 */
+		return has_class( name );
+	}

@@ -1,0 +1,43 @@
+extends /_include/_layout/_layout
+
+block vars
+	- page.title       = 'Form sample';
+	- page.description = '';
+	- page.keywords    = '';
+	- page.bodyclass   = 'page';
+
+block page_contents
+
+	section
+		h2 Form
+
+		form(action="#", method="post")
+			table.table
+				tbody
+					tr
+						th
+							label.mr-3(for="name") 氏名
+							span.badge.badge-danger 必須
+						td
+							input.form-control(type="text", name="name", id="name")
+					tr
+						th
+							label.mr-3(for="email") E-mail
+							span.badge.badge-primary 任意
+						td
+							input.form-control(type="email", name="email", id="email")
+					tr
+						th
+							label.mr-3(for="tel") 電話番号
+							span.badge.badge-primary 任意
+						td
+							input.form-control(type="tel", name="tel", id="tel")
+					tr
+						th
+							label.mr-3(for="message") お問い合わせ内容
+							span.badge.badge-danger 必須
+						td
+							textarea.form-control(name="message", id="message")
+
+			p.text-center
+				input.btn.btn-primary.btn-lg(type="submit", value="送信内容を確認")

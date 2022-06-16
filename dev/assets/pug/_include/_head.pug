@@ -1,0 +1,64 @@
+head
+	meta(charset= site.charset)
+	meta(http-equiv="X-UA-Compatible", content="IE=edge")
+	meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+	if is_home
+		title(itemprop="name")= site.name
+	else
+		title(itemprop="name") #{page.title} | #{site.name}
+
+	if page.description
+		meta(name="description", content= page.description)
+		meta(itemprop="description", content= page.description)
+	else
+		meta(name="description", content="")
+		meta(itemprop="description", content="")
+
+	if page.keywords
+		meta(name="keywords", content= page.keywords)
+	else
+		meta(name="keywords", content="")
+
+	meta(property="og:title", content= page.title)
+
+	if is_home
+		meta(property="og:type", content="website")
+	else
+		meta(property="og:type", content="article")
+
+	meta(property="og:image", content="")
+	meta(property="og:url", content="")
+
+	if page.description
+		meta(property="og:description", content= page.description)
+	else
+		meta(property="og:description", content="")
+
+	meta(property="og:site_name", content= site.name)
+	meta(property="og:locale", content="ja_JP")
+
+	meta(name="twitter:card" content="summary_large_image")
+	meta(name="twitter:title" content= page.title)
+	if page.description
+		meta(name="twitter:description" content= page.description)
+	else
+		meta(name="twitter:description" content="")
+	meta(name="twitter:image" content="")
+
+	if site.favicon
+		link(rel="shortcut icon", href= site.favicon)
+	if site.apple_icon
+		link(rel="apple-touch-icon" href= site.apple_icon)
+
+	link(rel="stylesheet", href= paths.css + "/style.min.css")
+	link(rel="stylesheet", href= paths.js  + "/libs/magnific-popup/magnific-popup.css")
+	link(rel="stylesheet", href= paths.css + "/temp.css")
+	link(rel="preconnect", href="https://fonts.googleapis.com")
+	link(rel="preconnect", href="https://fonts.gstatic.com",crossorigin)
+	link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;500;700&display=swap",crossorigin)
+
+	if is_page('home')
+		link(rel="stylesheet", href= paths.js  + "/libs/slick/slick.css")
+
+	block add_css

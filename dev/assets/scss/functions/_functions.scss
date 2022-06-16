@@ -1,0 +1,11 @@
+// px to rem
+$font-size-root: 16 !default;
+
+@function rem($px) {
+	@return ($px / $font-size-root) + rem;
+}
+
+// Foundation sites ver.
+@function rem-calc($px) {
+	@return rem($px);
+}
