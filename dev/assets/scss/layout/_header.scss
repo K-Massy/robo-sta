@@ -3,66 +3,7 @@
 //
 
 .header {
-	background-color: #F8F8F8;
-}
-
-// Layout
-.header {
-	&-inner {
-		@include media-breakpoint-up(md) {
-			display: flex;
-			justify-content: space-between;
-			align-items: stretch;
-
-			nav {
-				flex: 1 1 auto;
-			}
-		}
+	.navbar{
+		border-bottom: 1px solid $light;
 	}
-}
-
-// Logo
-.header-logo {
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 100%;
-	display: flex;
-	align-items: center;
-}
-
-// Button
-.header-button-container {
-	position: absolute;
-	top: 0;
-	right: 0;
-
-	button {
-		background-color: $primary;
-		cursor: pointer;
-	}
-}
-
-// Nav
-.header-nav {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	height: 100%;
-
-	@include media-breakpoint-up(md) {
-		display: flex;
-		align-items: stretch;
-		justify-content: flex-end;
-		flex-wrap: wrap;
-	}
-
-	> li {
-		a {
-			display: flex;
-			align-items: center;
-			padding: .5em 1em;
-			height: 100%;
-		}
-	}
-	
 }

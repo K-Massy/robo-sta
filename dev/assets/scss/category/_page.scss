@@ -2,20 +2,24 @@
 // Page
 //
 
-body.page {
-
-	//
-	// Header
-	//
-	.header {
-
+.post-wrap{
+	display: flex;
+	flex:wrap;
+	width: 100%;
+}
+.post-left{
+	width: calc(100% - 360px);
+	&__wrap{
+		padding: rem(24) 0 rem(24) rem(32);
 	}
-
-
-	//
-	// Footer
-	//
-	.footer {
-
+}
+.post-right{
+	width: 360px;
+	&__wrap{
+		padding: rem(24) rem(32);
 	}
+}
+
+.post-main__image{
+	margin-bottom: rem(24);
 }

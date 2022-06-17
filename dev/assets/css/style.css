@@ -11898,96 +11898,8 @@ a {
   opacity: 0;
 }
 
-.header {
-  background-color: #F8F8F8;
-}
-
-@media (min-width: 768px) {
-  .header-inner {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-  }
-  .header-inner nav {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 1 auto;
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-  }
-}
-
-.header-logo {
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.header-button-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.header-button-container button {
-  background-color: #5ac8b8;
-  cursor: pointer;
-}
-
-.header-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-@media (min-width: 768px) {
-  .header-nav {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-}
-
-.header-nav > li a {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: .5em 1em;
-  height: 100%;
+.header .navbar {
+  border-bottom: 1px solid #e9ecef;
 }
 
 .sidebar {
@@ -12122,8 +12034,8 @@ a {
 .main-content {
   position: relative;
   left: 256px;
-  padding-top: 58px;
   width: calc(100% - 256px);
+  padding-top: 58px;
 }
 
 body {
@@ -12241,4 +12153,36 @@ body.home .hero .slick-dots > li button {
 
 body.home .hero .slick-dots > li.slick-active button {
   background-color: #5ac8b8;
+}
+
+.post-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+  -webkit-flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap;
+  width: 100%;
+}
+
+.post-left {
+  width: calc(100% - 360px);
+}
+
+.post-left__wrap {
+  padding: 1.5rem 0 1.5rem 2rem;
+}
+
+.post-right {
+  width: 360px;
+}
+
+.post-right__wrap {
+  padding: 1.5rem 2rem;
+}
+
+.post-main__image {
+  margin-bottom: 1.5rem;
 }

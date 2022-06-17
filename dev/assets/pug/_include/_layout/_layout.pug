@@ -14,24 +14,21 @@ html(lang= site.language, itemscope, itemtype=`${ is_home ? 'https://schema.org/
 
 		include ../_parts/_noscript
 		.robosta
-			include ./_side
-			.main-content
+			header.header
+				include ./_side
 				include ./_header
-
-				main.main(role="main")
-
-					if has_class( 'home' )
-						block page_contents
-					else if has_class( 'post' )
-						article.page
-							.page-contents
-								.container
-									block page_contents
-					else
-						article.page
-							.page-contents
-								.container
-									block page_contents
+			main.main-content(role="main")
+				if has_class( 'home' )
+					block page_contents
+				else if has_class( 'post' )
+					article.page
+						.page-contents
+							block page_contents
+				else
+					article.page
+						.page-contents
+							.container
+								block page_contents
 
 
 				include ./_footer
