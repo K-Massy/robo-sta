@@ -51,3 +51,55 @@
     }
   }
 }
+
+.archive-card{
+  width: 100%;
+  overflow: hidden;
+  .section-heading,
+  .section-description{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  &__inner{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: rem(-8);
+    margin-right: rem(-8);
+    & > div{
+      width: 25%;
+      padding: 0 rem(8);
+    }
+  }
+  .card{
+    border: none;
+    &-body{
+      padding: .75rem 0;
+      display: flex;
+      flex-wrap: wrap;
+      &__left{
+        width: 40px;
+      }
+      &__right{
+        width: calc(100% - 40px);
+        padding-left: rem(8);
+      }
+      &__heading{
+        margin-bottom: rem(8);
+      }
+      &__footer{
+        .text-muted{
+          display: block;
+        }
+      }
+    }
+    &-title{
+      font-size: rem(14);
+      font-weight: bold;
+      margin-bottom:0;
+
+    }
+  }
+}

@@ -11401,6 +11401,75 @@ a:hover img, a:focus img {
   margin-bottom: 0;
 }
 
+.archive-card {
+  width: 100%;
+  overflow: hidden;
+}
+
+.archive-card .section-heading,
+.archive-card .section-description {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.archive-card__inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+.archive-card__inner > div {
+  width: 25%;
+  padding: 0 0.5rem;
+}
+
+.archive-card .card {
+  border: none;
+}
+
+.archive-card .card-body {
+  padding: .75rem 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.archive-card .card-body__left {
+  width: 40px;
+}
+
+.archive-card .card-body__right {
+  width: calc(100% - 40px);
+  padding-left: 0.5rem;
+}
+
+.archive-card .card-body__heading {
+  margin-bottom: 0.5rem;
+}
+
+.archive-card .card-body__footer .text-muted {
+  display: block;
+}
+
+.archive-card .card-title {
+  font-size: 0.875rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
 .navbar {
   padding-right: 3rem;
 }
@@ -11830,6 +11899,9 @@ a {
   border: none;
   background-color: transparent;
   outline: none;
+  background: rgba(255, 255, 255, 0.4);
+  width: 46px;
+  font-size: 24px;
 }
 
 .slick-arrow.next {
@@ -11977,6 +12049,7 @@ a {
 
 .footer {
   background-color: #6c757d;
+  margin-top: 3rem;
   color: #fff;
 }
 
@@ -12018,7 +12091,7 @@ a {
 }
 
 .content-block {
-  padding-bottom: 3rem;
+  padding-top: 3rem;
 }
 
 .robosta {
@@ -12035,7 +12108,7 @@ a {
   position: relative;
   left: 256px;
   width: calc(100% - 256px);
-  padding-top: 58px;
+  padding-top: 56px;
 }
 
 body {
@@ -12172,7 +12245,7 @@ body.home .hero .slick-dots > li.slick-active button {
 }
 
 .post-left__wrap {
-  padding: 1.5rem 0 1.5rem 2rem;
+  padding: 2rem 0 2rem 3rem;
 }
 
 .post-right {
@@ -12180,9 +12253,9 @@ body.home .hero .slick-dots > li.slick-active button {
 }
 
 .post-right__wrap {
-  padding: 1.5rem 2rem;
+  padding: 2rem 3rem;
 }
 
 .post-main__image {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }

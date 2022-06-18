@@ -10,16 +10,16 @@
 .post-left{
 	width: calc(100% - 360px);
 	&__wrap{
-		padding: rem(24) 0 rem(24) rem(32);
+		padding: rem(32) 0 rem(32) rem(48);
 	}
 }
 .post-right{
 	width: 360px;
 	&__wrap{
-		padding: rem(24) rem(32);
+		padding: rem(32) rem(48);
 	}
 }
 
 .post-main__image{
-	margin-bottom: rem(24);
+	margin-bottom: rem(32);
 }

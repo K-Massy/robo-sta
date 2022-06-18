@@ -29,8 +29,8 @@
 		slidesToScroll: 1,
 		dots: false,
 		infinite: false,
-		prevArrow: '<button class="prev arrow">←</button>',
-		nextArrow: '<button class="next arrow">→</button>',
+		prevArrow: '<button class="prev arrow"><i class="las la-angle-left"></i></button>',
+		nextArrow: '<button class="next arrow"><i class="las la-angle-right"></i></button>',
 		responsive: [
 			{
 				breakpoint: 768,

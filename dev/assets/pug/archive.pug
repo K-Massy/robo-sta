@@ -1,0 +1,20 @@
+extends /_include/_layout/_layout
+
+block vars
+	- page.title       = site.name;
+	- page.description = site.description;
+	- page.keywords    = site.keywords;
+	- page.bodyclass   = 'home';
+	- is_home          = true;
+
+block page_contents
+
+	article
+		.content-block
+			.archive-card
+				.section-heading
+					h2.section-heading__title
+						| カテゴリ名
+				.archive-card__inner
+					- for ( var i=0; i<20; i++ )
+						include ./_include/_parts/_post

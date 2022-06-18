@@ -12,19 +12,19 @@ block page_contents
 	article
 
 	article
-		.content-block
+		.content-block.pt-0
 			.container-fluid
 				.js-hero.row
 					- for ( var i=0; i<9; i++ )
 						div
-							a.card(href="#")
+							a.card(href=paths.root + "archive.html")
 								.card-hero(style="background-image:url("+ paths.img +"/common/main.jpg);")
 		.content-block
 			.post-card
 				.section-heading
 					h2.section-heading__title
 						| おすすめ
-					a.section-heading__more(href="#")
+					a.section-heading__more(href=paths.root + "archive.html")
 						| もっと見る
 				.post-card__inner
 					.js-list
@@ -35,7 +35,7 @@ block page_contents
 				.section-heading
 					h2.section-heading__title
 						| 新着作品
-					a.section-heading__more(href="#")
+					a.section-heading__more(href=paths.root + "archive.html")
 						| もっと見る
 				.post-card__inner
 					.js-list
@@ -46,7 +46,7 @@ block page_contents
 				.section-heading
 					h2.section-heading__title
 						| カテゴリ1
-					a.section-heading__more(href="#")
+					a.section-heading__more(href=paths.root + "archive.html")
 						| もっと見る
 				.post-card__inner
 					.js-list
@@ -57,7 +57,7 @@ block page_contents
 				.section-heading
 					h2.section-heading__title
 						| カテゴリ2
-					a.section-heading__more(href="#")
+					a.section-heading__more(href=paths.root + "archive.html")
 						| もっと見る
 				.section-description 
 					p.text-muted
@@ -71,7 +71,7 @@ block page_contents
 				.section-heading
 					h2.section-heading__title
 						| カテゴリ3
-					a.section-heading__more(href="#")
+					a.section-heading__more(href=paths.root + "archive.html")
 						| もっと見る
 				.section-description 
 					p.text-muted
@@ -85,7 +85,7 @@ block page_contents
 				.section-heading
 					h2.section-heading__title
 						| カテゴリ4
-					a.section-heading__more(href="#")
+					a.section-heading__more(href=paths.root + "archive.html")
 						| もっと見る
 				.section-description 
 					p.text-muted
