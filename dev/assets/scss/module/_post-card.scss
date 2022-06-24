@@ -29,6 +29,16 @@
       flex-wrap: wrap;
       &__left{
         width: 40px;
+        a{
+          display: block;
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          overflow: hidden;
+          img{
+            display: block;
+          }
+        }
       }
       &__right{
         width: calc(100% - 40px);
@@ -36,8 +46,14 @@
       }
       &__heading{
         margin-bottom: rem(8);
+        a{
+          color: $gray-dark;
+        }
       }
       &__footer{
+        a{
+          color: $dark;
+        }
         .text-muted{
           display: block;
         }
@@ -81,6 +97,16 @@
       flex-wrap: wrap;
       &__left{
         width: 40px;
+        a{
+          display: block;
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          overflow: hidden;
+          img{
+            display: block;
+          }
+        }
       }
       &__right{
         width: calc(100% - 40px);
@@ -88,9 +114,15 @@
       }
       &__heading{
         margin-bottom: rem(8);
+        a{
+          color: $gray-dark;
+        }
       }
       &__footer{
-        .text-muted{
+        a{
+          color: $dark;
+        }
+         .text-muted{
           display: block;
         }
       }

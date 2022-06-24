@@ -1,0 +1,24 @@
+section
+  nav(role="navigation", aria-label="ページ番号")
+    ul.pagination.p-pagination
+      li.pagination__move__wrap
+        ul.move--prev.move_btn__wrap
+          li.prev-page.move_btn
+            a(href="#",aria-label="前のページ")
+              i.las.la-angle-left
+      li.page-item
+        a.page-link(aria-label="Page 1", href="#") 1
+      li.page-item
+        a.page-link(aria-label="Page 2", href="#") 2
+      li.page-item
+        a.page-link(aria-label="Page 3", href="#") 3
+      li.page-item.active
+        span.page-link 4
+          span.sr-only (現在のページ)
+      li.page-item
+        a.page-link(aria-label="Page 5", href="#") 5
+      li.pagination__move__wrap
+        ul.move--next.move_btn__wrap
+          li.next-page.move_btn
+            a(href="#",aria-label="次のページ")
+              i.las.la-angle-right

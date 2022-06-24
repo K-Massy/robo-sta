@@ -1,0 +1,10 @@
+	// pagination
+  .page-item{
+    &.active{
+      .page-link{
+        border-radius: 5px;
+        border: 1px solid $primary;
+        background-color: $primary;
+      }
+    }
+  }

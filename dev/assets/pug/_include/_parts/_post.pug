@@ -1,18 +1,21 @@
 div
-  a.card(href=paths.root + "post.html")
-    img(src= paths.img + "/post/card-"+i+".jpg" alt="alt")
-    | 
+  .card 
+    a(href=paths.root + "post.html")
+      img(src= paths.img + "/post/card-"+i+".jpg" alt="alt")
     .card-body
       .card-body__left
-        img.rounded-circle(src="https://placehold.jp/40x40.png" alt="text")
+        a(href=paths.root + "author.html")
+          img(src="https://placehold.jp/40x40.png" alt="text")
       .card-body__right
         .card-body__heading
-          h5.card-title.mb-0
-            | ガンダムリアルタイプをノーマル塗り_何でやねん！…
+          a(href=paths.root + "post.html")
+            h5.card-title.mb-0
+              | ガンダムリアルタイプをノーマル塗り_何でやねん！…
         .card-body__footer
           .card-body__author
             small.text-muted
-              | ROBOSTAさん
+              a(href=paths.root + "author.html")
+                | ROBOSTAさん
           .card-body__status
             small.text-muted
               | 10閲覧数・3週間前
