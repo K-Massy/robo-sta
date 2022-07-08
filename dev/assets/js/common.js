@@ -37,7 +37,5 @@
 			$(this).wrap("<div class='embed-responsive'/>");
 		}
 	});
-
-
-
 })(jQuery);
+

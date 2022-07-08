@@ -1,0 +1,41 @@
+.modelar{
+  &-profile{
+    &__bottom{
+
+    }
+    &__avatar{
+      border-radius: 100%;
+    }
+    &__name{
+      font-size: 18px;
+    }
+    &__text{
+      margin-top: 1rem;
+    }
+    &__sns{
+      display: flex;
+      margin-bottom:0;
+      padding:0;
+      list-style: none;
+      &-item{
+        &:not(:last-child){
+          margin-right: .5rem;
+        }
+      }
+      &-icon{
+        width: 24px;
+        height: 24px;
+        border-radius: 100%;
+      }
+    }
+  }
+  &__post{
+    margin-top: 1rem;
+  }
+}
+#sidebar__fixed{
+  background: magenta;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
