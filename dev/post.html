@@ -37,14 +37,14 @@
 	<div class="robosta">
 		<header class="header">
 			<div class="sidebar">
-				<div class="sidebar-header">
-					<button class="sidebar-toggler" type="button" data-toggle="collapse" data-target="#sidebarSupportedContent" aria-controls="sidebarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="sidebar-toggler-icon"></span>
-					</button>
-				</div>
 				<nav class="sidebar-visitor">
+					<a class="navbar-brand" href="./">
+						<img class="d-inline-block align-top" src="https://getbootstrap.jp/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">&nbsp;ROBOSTA</a>
 					<nav class="sidebar-visitor__nav">
 						<ul class="sidebar-visitor__list">
-							<li class="sidebar-visitor__item"><a class="btn btn-outline-success btn-block" href="./login.html">ログイン<span class="sr-only">(current)</span></a>
+							<li class="sidebar-visitor__item">
+								<button class="btn btn-outline-success btn-block" type="button" data-toggle="modal" data-target="#loginModal">ログイン<span class="sr-only">(current)</span>
+								</button>
 							</li>
 							<li class="sidebar-visitor__item"><a class="btn btn-info btn-block" href="./regist.html">会員登録<span class="sr-only">(current)</span></a>
 							</li>
@@ -129,20 +129,21 @@
 				</nav>
 			</div>
 			<nav class="navbar navbar-expand-lg navbar-light">
-				<a class="navbar-brand" href="./">
-					<img class="d-inline-block align-top" src="https://getbootstrap.jp/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="">&nbsp;ROBOSTA</a>
 				<div class="navbar-collapse">
 					<form class="form-inline my-2 my-lg-0" action="./archive.html">
 						<input class="form-control mr-sm-2" type="search" placeholder="キーワード検索" aria-label="Search">
 						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">検索</button>
 					</form>
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="#"><i class="las la-image"></i><span class="sr-only">(current)</span></a>
+					<ul class="navbar-nav ml-auto nav-my">
+						<li class="nav-item active"><a class="nav-link" href="#"><i class="las la-pencil-alt"></i><span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item active"><a class="nav-link" href="#"><i class="las la-bell"></i><span class="sr-only">(current)</span></a>
 						</li>
-						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="las la-battery-three-quarters"></i></a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">ダッシュボード</a><a class="dropdown-item" href="#">会員情報変更</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle after-none" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<img class="nav-item__avatar" src="https://placehold.jp/40x40.png" alt="text">
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="./author.html">マイページ</a><a class="dropdown-item" href="#">ダッシュボード</a><a class="dropdown-item" href="#">会員情報変更</a>
 								<div class="dropdown-divider"></div><a class="dropdown-item" href="#">ログアウト</a>
 							</div>
 						</li>
@@ -161,8 +162,8 @@
 										<div class="post-main__image">
 											<img src="https://gumpla.jp/wp-content/uploads/2022/06/fotor_1655378264502-1-785x1024.jpg">
 										</div>
-										<div class="page-title">
-											<h2>ガンダムリアルタイプをノーマル塗り_何でやねん！…</h2>
+										<div class="section-heading">
+											<h1 class="section-heading__title--large">aaa</h1>
 										</div>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae molestias consectetur laudantium voluptatibus quas. Doloremque, accusantium veritatis soluta, odio ipsam harum repudiandae omnis dicta dolores rem quidem eligendi id maiores.</p>
 										<h3>Heading 3</h3>
@@ -688,7 +689,7 @@
 								</li>
 								<li class="footer-nav__item"><a class="footer-nav__link" href="#">よくある質問</a>
 								</li>
-								<li class="footer-nav__item"><a class="footer-nav__link" href="#">ご利用規約</a>
+								<li class="footer-nav__item"><a class="footer-nav__link" href="./page-term.html">ご利用規約</a>
 								</li>
 								<li class="footer-nav__item"><a class="footer-nav__link" href="#">プライバシーポリシー</a>
 								</li>
@@ -703,6 +704,22 @@
 					</p>
 				</div>
 			</footer>
+			<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="loginModalLabel">Modal title</h5>
+							<button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">...</div>
+						<div class="modal-footer">
+							<button class="btn btn-secondary" type="button" data-dismiss="modal">Close</button>
+							<button class="btn btn-primary" type="button">Save changes</button>
+						</div>
+					</div>
+				</div>
+			</div>
 			<script src="./assets/js/libs/jquery-3.6.0.min.js"></script>
 			<script src="./assets/js/libs/bootstrap.bundle.min.js"></script>
 			<script src="./assets/js/libs/magnific-popup/jquery.magnific-popup.min.js"></script>

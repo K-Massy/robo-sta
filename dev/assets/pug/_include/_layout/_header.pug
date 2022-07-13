@@ -1,24 +1,22 @@
 nav.navbar.navbar-expand-lg.navbar-light
-	a.navbar-brand(href=paths.root)
-		img.d-inline-block.align-top(src='https://getbootstrap.jp/docs/4.3/assets/brand/bootstrap-solid.svg' width='30' height='30' alt='')
-		| &nbsp;ROBOSTA
 	.navbar-collapse
 		form(action=paths.root + "archive.html").form-inline.my-2.my-lg-0
 			input.form-control.mr-sm-2(type='search' placeholder='キーワード検索' aria-label='Search')
 			button.btn.btn-outline-success.my-2.my-sm-0(type='submit') 検索
-		ul.navbar-nav.ml-auto
+		ul.navbar-nav.ml-auto.nav-my
 			li.nav-item.active
 				a.nav-link(href='#')
-					i.las.la-image
+					i.las.la-pencil-alt
 					span.sr-only (current)
 			li.nav-item.active
 				a.nav-link(href='#')
 					i.las.la-bell
 					span.sr-only (current)
 			li.nav-item.dropdown
-				a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-					i.las.la-battery-three-quarters
+				a#navbarDropdown.nav-link.dropdown-toggle.after-none(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+					img.nav-item__avatar(src="https://placehold.jp/40x40.png" alt="text")
 				.dropdown-menu(aria-labelledby='navbarDropdown')
+					a.dropdown-item(href=paths.root + "author.html") マイページ
 					a.dropdown-item(href='#') ダッシュボード
 					a.dropdown-item(href='#') 会員情報変更
 					.dropdown-divider

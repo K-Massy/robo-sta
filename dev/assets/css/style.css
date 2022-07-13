@@ -11436,6 +11436,10 @@ a:hover img, a:focus img {
   opacity: .8;
 }
 
+.after-none:after {
+  display: none;
+}
+
 .alert {
   position: relative;
   padding: .75rem 1.25rem;
@@ -11667,6 +11671,32 @@ a:hover img, a:focus img {
   font-size: 0.875rem;
   font-weight: bold;
   margin-bottom: 0;
+}
+
+.nav-my .nav-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.nav-my .nav-item .las {
+  font-size: 1.5rem;
+  color: #343a40;
+}
+
+.nav-my .nav-item__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
 }
 
 .navbar {
@@ -12074,6 +12104,12 @@ a {
   margin-bottom: 0;
 }
 
+.section-heading__title--larget {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
 .section-heading__more {
   font-size: 0.8125rem;
   margin-left: 0.5rem;
@@ -12221,17 +12257,17 @@ a {
   left: 0;
   height: 100%;
   z-index: 100;
-  padding: 3.125rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
   overflow-y: scroll;
+  z-index: 1050;
+  border-right: 1px solid #e9ecef;
 }
 
 .sidebar-header {
-  position: fixed;
-  top: 0;
-  left: 0;
   background-color: #fff;
   padding: 0.5rem 1.5rem;
   width: 16rem;
+  z-index: 0;
 }
 
 .sidebar-toggler {
@@ -12245,7 +12281,11 @@ a {
 }
 
 .sidebar-visitor {
-  margin: 0.5rem 0 1.5rem;
+  margin: 0 0 1.5rem;
+}
+
+.sidebar-visitor__nav {
+  margin-top: 0.5rem;
 }
 
 .sidebar-visitor__list {
@@ -12489,7 +12529,7 @@ body.home .hero .slick-dots > li.slick-active button {
 }
 
 .post-left__wrap {
-  padding: 2rem 0 2rem 3rem;
+  padding: 2rem 0;
 }
 
 .post-right {
@@ -12497,11 +12537,21 @@ body.home .hero .slick-dots > li.slick-active button {
 }
 
 .post-right__wrap {
-  padding: 2rem 3rem;
+  padding: 2rem 0 2rem 3rem;
 }
 
 .post-main__image {
   margin-bottom: 2rem;
+}
+
+.page-contents {
+  padding: 0 3rem;
+}
+
+.page-header {
+  margin: -3rem -4rem 0 -4rem;
+  padding: 3rem 4rem;
+  background-color: #e9ecef;
 }
 
 .page-nav {

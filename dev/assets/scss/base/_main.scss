@@ -30,3 +30,8 @@ a {
 		}
 	}
 }
+.after-none{
+	&:after{
+		display: none;
+	}
+}

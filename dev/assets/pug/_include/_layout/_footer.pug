@@ -10,7 +10,7 @@ footer.footer(role="contentinfo")
 						a(href="#").footer-nav__link
 							| よくある質問
 					li.footer-nav__item
-						a(href="#").footer-nav__link
+						a(href=paths.root + "page-term.html").footer-nav__link
 							| ご利用規約
 					li.footer-nav__item
 						a(href="#").footer-nav__link
@@ -21,3 +21,15 @@ footer.footer(role="contentinfo")
 	.footer-copyright
 		p.text-center
 			small Copyright &copy; #{new Date().getFullYear()} #{site.name}
+#loginModal.modal.fade(tabindex='-1' role='dialog' aria-labelledby='loginModalLabel' aria-hidden='true')
+	.modal-dialog(role='document')
+		.modal-content
+			.modal-header
+				h5#loginModalLabel.modal-title Modal title
+				button.close(type='button' data-dismiss='modal' aria-label='Close')
+					span(aria-hidden='true') ×
+			.modal-body
+				| ...
+			.modal-footer
+				button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+				button.btn.btn-primary(type='button') Save changes

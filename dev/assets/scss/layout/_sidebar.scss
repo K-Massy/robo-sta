@@ -5,15 +5,15 @@
   left:0;
   height: 100%;
   z-index:100;
-  padding:rem(50) rem(16) rem(8) rem(16);
+  padding:rem(8) rem(16);
   overflow-y: scroll;
+  z-index: 1050;
+  border-right: 1px solid $gray-200;
   &-header{
-    position: fixed;
-    top:0;
-    left:0;
     background-color: $white;
     padding:rem(8) rem(24);
     width: rem(256);
+    z-index: 0;
   }
   &-toggler{
     appearance: none;
@@ -23,7 +23,10 @@
     border: none;
   }
   &-visitor{
-    margin: rem(8) 0 rem(24);
+    margin: 0 0 rem(24);
+    &__nav{
+      margin-top: rem(8);
+    }
     &__list{
       list-style: none;
       padding:0;

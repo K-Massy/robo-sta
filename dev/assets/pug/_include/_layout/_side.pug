@@ -1,12 +1,12 @@
 .sidebar
-	.sidebar-header
-		button.sidebar-toggler(type='button' data-toggle='collapse' data-target='#sidebarSupportedContent' aria-controls='sidebarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-			span.sidebar-toggler-icon
 	nav.sidebar-visitor
+		a.navbar-brand(href=paths.root)
+			img.d-inline-block.align-top(src='https://getbootstrap.jp/docs/4.3/assets/brand/bootstrap-solid.svg' width='30' height='30' alt='')
+			| &nbsp;ROBOSTA
 		nav.sidebar-visitor__nav
 			ul.sidebar-visitor__list
 				li.sidebar-visitor__item
-					a.btn.btn-outline-success.btn-block(href=paths.root + "login.html")
+					button(type="button" data-toggle="modal" data-target="#loginModal").btn.btn-outline-success.btn-block
 						| ログイン
 						span.sr-only (current)
 				li.sidebar-visitor__item

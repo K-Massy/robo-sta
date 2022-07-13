@@ -2,6 +2,7 @@
 // Page
 //
 
+
 .post{
 	&-wrap{
 		display: flex;
@@ -12,13 +13,13 @@
 		width: calc(100% - 360px);
 		flex-grow: 1;
 		&__wrap{
-			padding: rem(32) 0 rem(32) rem(48);
+			padding: rem(32) 0;
 		}
 	}
 	&-right{
 		width: 360px;
 		&__wrap{
-			padding: rem(32) rem(48);
+			padding: rem(32) 0 rem(32) rem(48);
 		}
 	}
 	&-main__image{
@@ -26,6 +27,14 @@
 	}
 }
 .page{
+	&-contents{
+		padding: 0 rem(48);
+	}
+	&-header{
+		margin: rem(-48) rem(-64) 0 rem(-64);
+		padding: rem(48) rem(64);
+		background-color: $gray-200;
+	}
 	&-nav{
 		margin-top: 2rem;
 		&__list{

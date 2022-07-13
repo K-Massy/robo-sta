@@ -10,6 +10,11 @@
       font-weight: 700;
       font-size: rem(19);
       margin-bottom:0;
+      &--larget{
+        font-weight: 700;
+        font-size: rem(24);
+        margin-bottom:0;
+      }
     }
     &__more{
       font-size: rem(13);
